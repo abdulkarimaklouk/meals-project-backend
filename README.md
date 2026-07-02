@@ -1,27 +1,69 @@
-# meals-project-backend
+# Restaurant Management System - Backend
 
+## Overview
 
-## Project Overview
+A backend REST API for a restaurant management system built with **Node.js**, **Express.js**, and **MySQL**. The application manages meals, ingredients, inventory, customer orders, and profit calculations through a structured relational database and modular backend architecture.
 
-meals project is a project for managing restaurant meal information. The system stores details about meals, their ingredients, costs, and orders, helping restaurants track and manage their inventory and sales effectively.
+## Features
 
-Features
+* Meal Management
+* Ingredient Management
+* Inventory Management
+* Order Management
+* Cost & Profit Calculation
+* RESTful API Design
+* Input Validation
+* Error Handling
+* Relational Database Design
 
-### Meal Management
-- **Meals Table**: Stores meal names, selling prices, and their ingredients.
-- **Ingredients**: Details the components required for each meal (e.g., "2 lettuce leaves, 3 kg beef"), and allows for the reuse of ingredients in different meals.
+## Tech Stack
 
-### Inventory Management
-- **Raw Materials Table**: Contains information on each ingredient, including cost and stock levels.
-- **Stock Table**: Displays the available quantities of raw materials and supply details.
+* Node.js
+* Express.js
+* MySQL
+* JavaScript
+* SQL
+* Git & GitHub
 
-### Order Management
-- **Orders Table**: Records details of each order, including meal type, quantity, and total selling price.
+## Project Structure
 
-### Cost and Profit Calculation
-- **Meal Cost Calculation**: Computes the cost of preparing each meal based on ingredient costs.
-- **Profit Calculation**: Calculates profit by comparing the meal cost with its selling price.
+The project follows a modular architecture by separating responsibilities into dedicated components:
 
-## Technologies Used
-- **Database**: MySQL
-- **Programming Language**: Node.js with Express
+```text
+controllers/
+models/
+routes/
+services/
+middleware/
+config/
+```
+
+This structure keeps the application organized, maintainable, and easy to extend.
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/abdulkarimaklouk/meals-project-backend.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file and configure the required environment variables.
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Author
+
+**Abdulkarim Aklouk**
+
+GitHub: https://github.com/abdulkarimaklouk
